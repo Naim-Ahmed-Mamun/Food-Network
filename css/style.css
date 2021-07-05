@@ -1,0 +1,258 @@
+/* ----global css start */
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.diff_color{
+    color: #FB934A;
+}
+/* ----global css end */
+
+/* -----header start-------- */
+
+/* navbar start */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60px;
+    /* background-color: black; */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 5px 15px;
+}
+.nav_menu .nav_items{
+    display: flex;
+}
+.logo a{
+    font-size: 25px;
+    color: #FF5600;
+}
+.nav_menu .nav_items li{
+    margin-right: 40px;
+}
+.nav_menu .nav_items li:last-child{
+    margin-right: 0px;
+}
+.nav_menu .nav_items li a{
+    color: #091a23;
+    font-size: 20px;
+}
+/* navbar end */
+
+/* main header start */
+
+.header_items{
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+.main_header_content,.header_img{
+    flex-basis: 48%;
+}
+.header_desc h3{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.header_desc p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #828282;
+    max-width: 520px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.btn {
+    background: linear-gradient(45deg,#c21500, #ffc500);
+    padding: 12px 35px;
+    border-radius: 35px;
+    display: inline-block;
+    color: white;
+}
+.header_img{
+    text-align: center;
+}
+/* main header end */
+
+/* -----header end-------- */
+
+/* ----about section start--- */
+.about{
+    background: url(../img/about_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0;   
+}
+.about_items{
+    align-items: center;
+    justify-content: center;
+}
+.about_img{
+    text-align: center;
+}
+.about_img img{
+    height: 550px;
+}
+.about_img,.about_desc{
+    flex-basis: 48%;
+}
+.about_desc_inner{
+    padding-left: 30px;
+}
+.about_desc_inner h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 32px;
+}
+.about_desc_inner p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #18191F;
+    margin-bottom: 40px;
+    line-height: 28px;
+}
+/* ----about section end--- */
+
+/* ---recipe section start--- */
+.recipe{
+    padding:100px 0;
+}
+.recipe_items{
+    justify-content: space-between;
+}
+.recipe_title{
+    text-align: center;
+}
+.recipe_title h3{
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+.recipe_title p {
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 28px;
+    margin-bottom: 38px;
+}
+.recipe_item{
+    flex-basis: 30%;
+}
+.recipe_item_inner{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    margin-right: 15px;
+    height: 670px;
+    border-radius: 10px;
+}
+.recipe_img img{
+    border-radius: 10px;
+}
+.recipe_desc h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 40px 0 15px 0;
+    line-height: 32px;
+}
+.recipe_desc p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+}
+/* ---recipe section end--- */
+
+/* -----state items start------- */
+.state_items{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 50px 0;
+    border-radius: 10px;
+}
+.state_item h3{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+/* -----state items end------- */
+
+/* ---contact start--- */
+.contact{
+    padding: 100px 0;
+}
+.contact_title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.contact_form{
+    max-width: 800px;
+    margin: 0 auto;
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+form input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+    display: block;
+    padding: 15px;
+}
+button.btn{
+    border:none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/* ---contact end--- */
+
+/* -----footer item---- */
+.footer{
+    background: #000;
+    padding: 50px 0;
+}
+.footer_item{
+    text-align: center;
+}
+.footer_item h3{
+    font-size: 30px;
+    font-weight: 900;
+    color: #5B5B5B;
+    margin-bottom: 35px;
+}
+.footer_item p{
+    color: #fff;
+}
